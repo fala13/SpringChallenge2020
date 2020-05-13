@@ -44,18 +44,12 @@ public class CommandLineInterface {
 			GameResult result = (GameResult) getGameResult.get(runner);
 
 			if (cmd.hasOption("d")) {
-    			runner.setSeed(Long.valueOf(cmd.getOptionValue("d")));
+                runner.setSeed(Long.valueOf(cmd.getOptionValue("d").replaceAll("seed=","")));
 			}
 
 			int playerCount = 0;
 
-            /*
-			for (int i = 1; i <= 2; ++i) {
-				if (cmd.hasOption("p" + i)) {
-					runner.addAgent(cmd.getOptionValue("p" + i),cmd.getOptionValue("p" + i), "https://static.codingame.com/servlet/fileservlet?id=43829808065962");
-					playerCount += 1;
-				}
-			}*/
+		    playerCount = 2;
 		    runner.addAgent(cmd.getOptionValue("p1"),cmd.getOptionValue("p1"), "https://static.codingame.com/servlet/fileservlet?id=43829808065962");
 		    runner.addAgent(cmd.getOptionValue("p2"),cmd.getOptionValue("p2"), "https://static.codingame.com/servlet/fileservlet?id=43829821541064");
 
