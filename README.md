@@ -15,4 +15,4 @@ With cg-brutaltester:
 time java -jar cg-brutaltester-1.0.0-SNAPSHOT.jar -r "java --add-opens java.base/java.lang=ALL-UNNAMED -jar spring-2020-1.0-SNAPSHOT.jar" -p1 "pacsBin1" -p2 "pacsBin2" -t 4 -n 10 -l "./logs/" -v
 
 # Ramblings
-Took me few hours to get through java issues this time. Counterbalance also made some: https://github.com/Counterbalance/SpringChallenge2020/tree/cli
+Took me few hours to get through java issues this time. Counterbalance also made one: https://github.com/Counterbalance/SpringChallenge2020/tree/cli
