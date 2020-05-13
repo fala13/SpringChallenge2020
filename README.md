@@ -7,7 +7,7 @@ Get it here: https://github.com/fala13/SpringChallenge2020/releases
 mvn package
 
 # Example use
-java --add-opens java.base/java.lang=ALL-UNNAMED -jar ~/codingame/pacs-runner/SpringChallenge2020/target/spring-2020-1.0-SNAPSHOT.jar -p1 pacsBin1 -p2 pacsBin2 -l gamelog1.json
+java --add-opens java.base/java.lang=ALL-UNNAMED -jar spring-2020-1.0-SNAPSHOT.jar -p1 pacsBin1 -p2 pacsBin2 -l gamelog1.json
 
 Where "pacsBin1", "pacsBin2" are the commands to run your player programs.
 
